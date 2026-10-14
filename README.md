@@ -1,4 +1,3 @@
-# VGC Student Tracker - CS50 Final Project
 #### Video Demo: https://youtube.com/shorts/ZSwngnbrq-c
 #### Description:
 This is my CS50 Final Project by idivet (Antony Ancil). Its a simple Flask app for Venad Global Consultancy to track students going abroad.
