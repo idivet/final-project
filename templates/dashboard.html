@@ -1,0 +1,19 @@
+
+{% extends "layout.html" %}
+{% block main %}
+<h2>Students - Honest Guidance from Kollam</h2>
+<form action="/add" method="post">
+    <input name="name" placeholder="Student Name" required>
+    <input name="country" placeholder="Country" required>
+    <input name="course" placeholder="Course">
+    <select name="status"><option>Applied</option><option>Offer</option><option>Visa</option><option>Flown</option></select>
+    <button>Add</button>
+</form>
+<table border="1" style="margin-top:20px;width:100%">
+<tr><th>Name</th><th>Country</th><th>Course</th><th>Status</th></tr>
+{% for s in students %}
+<tr><td>{{ s.name }}</td><td>{{ s.country }}</td><td>{{ s.course }}</td><td>{{ s.status }}</td></tr>
+{% endfor %}
+</table>
+<a href="/logout">Logout</a>
+{% endblock %}
